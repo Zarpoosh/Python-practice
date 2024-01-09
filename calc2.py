@@ -10,9 +10,13 @@ def multiply(num1, num2):
 def divide(num1, num2):
     return num1 / num2
 
+def power(num1, num2):
+    return num1 ** num2
+
+
 # Taking input from the user
 num1 = float(input("Enter the first number: "))
-operator = input("Enter the operator (+, -, *, /): ")
+operator = input("Enter the operator (+, -, *, /, **): ")
 num2 = float(input("Enter the second number: "))
 
 # Performing the calculation based on the operator
@@ -24,6 +28,8 @@ elif operator == '*':
     result = multiply(num1, num2)
 elif operator == '/':
     result = divide(num1, num2)
+elif operator == '**':
+    result = power(num1, num2)
 else:
     print("Invalid operator!")
 
