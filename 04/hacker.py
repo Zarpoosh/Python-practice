@@ -146,3 +146,6 @@ for sum_column in sum_columns:
 
 # Display the result
 print("The result is:", result)
+
+def name(args):
+ pass
