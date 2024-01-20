@@ -114,18 +114,18 @@
 #     print(i, end=" ")
 # !--------------------------
 
-# a = list(map(int, input("enter 4 numbers : ").split()))
+a = list(map(int, input("enter 4 numbers : ").split()))
 
-# min_diff = abs(a[0] - a[1])
-# min_pair = [a[0], a[1]]
+min_diff = abs(a[0] - a[1])
+min_pair = [a[0], a[1]]
 
-# for i in range(2, len(a)):
-#   for j in range(i + 1, len(a)):
-#     if abs(a[i] - a[j]) < min_diff:
-#       min_diff = abs(a[i] - a[j])
-#       min_pair = [a[i], a[j]]
+for i in range(2, len(a)):
+  for j in range(i + 1, len(a)):
+    if abs(a[i] - a[j]) < min_diff:
+      min_diff = abs(a[i] - a[j])
+      min_pair = [a[i], a[j]]
 
-# print("2 numbers with min abs:", min_pair)
+print("2 numbers with min abs:", min_pair)
 # !--------------------------
 # x=range(0,10,2)
 # print(x)
@@ -136,15 +136,21 @@
 # b=[4,7]
 # c=a+b
 # print(c)
-# !--------------------------
-phone_numbers={"minoo":"09940" ,"maryam":"7566354", "kimia":"656421" , "dady":"9954648"}
-k=input("Enter name:")
-if k in phone_numbers:
-    print(phone_numbers[k])
-else:
-    print("404 not found!")
-    answer=input("do you want add to note book?(y/n)")
-    if answer=="y":
-        new_number=input(f"what is {k}'s number ?")
-        phone_numbers[k]=new_number
-print(phone_numbers)
+# !-------------------------- phone book -------------------------
+# phone_numbers={"minoo":"09940" ,"maryam":"7566354", "kimia":"656421" , "dady":"9954648"}
+# k=input("Enter name:")
+# if k in phone_numbers:
+#     print(phone_numbers[k])
+# else:
+#     print("404 not found!")
+#     answer=input("do you want add to note book?(y/n)")
+#     if answer=="y":
+#         new_number=input(f"what is {k}'s number ?")
+#         phone_numbers[k]=new_number
+# print(phone_numbers)
+# ! ----------------------------------------------
+a=[]
+for i in range(4):
+    a.append(int(input()))
+a.sort()
+print(a[0],a[-1])
