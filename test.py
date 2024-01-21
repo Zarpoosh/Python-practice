@@ -114,18 +114,27 @@
 #     print(i, end=" ")
 # !--------------------------
 
-a = list(map(int, input("enter 4 numbers : ").split()))
+# چهار عد  ا ز ورودی بگیرد و د. عدد که کم ترین اختلاف را با هم دارن چاپ کند
+# a = list(map(int, input("enter 4 numbers : ").split()))
 
-min_diff = abs(a[0] - a[1])
-min_pair = [a[0], a[1]]
+# min_diff = abs(a[0] - a[1])
+# min_pair = [a[0], a[1]]
 
-for i in range(2, len(a)):
-  for j in range(i + 1, len(a)):
-    if abs(a[i] - a[j]) < min_diff:
-      min_diff = abs(a[i] - a[j])
-      min_pair = [a[i], a[j]]
+# for i in range(2, len(a)):
+#   for j in range(i + 1, len(a)):
+#     if abs(a[i] - a[j]) < min_diff:
+#       min_diff = abs(a[i] - a[j])
+#       min_pair = [a[i], a[j]]
 
-print("2 numbers with min abs:", min_pair)
+# print("2 numbers with min abs:", min_pair)
+
+# !----------------------------------
+# بیشترین اختلاف ار چاپ میکند
+# a=[]
+# for i in range(4):
+#     a.append(int(input()))
+# a.sort()
+# print(a[0],a[-1])
 # !--------------------------
 # x=range(0,10,2)
 # print(x)
@@ -149,8 +158,20 @@ print("2 numbers with min abs:", min_pair)
 #         phone_numbers[k]=new_number
 # print(phone_numbers)
 # ! ----------------------------------------------
-a=[]
-for i in range(4):
-    a.append(int(input()))
-a.sort()
-print(a[0],a[-1])
+# a = {'x':100, 'y':200}
+# b = list(a.items())
+# print(b)
+# !-----------------------------------
+# m=[[1,2,3], [4,5,6], [7,8,9]]
+# c=0
+# for i in range(len(m)):
+#     for j in range(len(m[0])):
+#         print(m[i][j] , end="\t")
+#         if m[i][j] <0:
+#             c+=1
+#     print(" ") 
+            
+# sum=0
+# for i in range (len(m[0])):
+#     sum+=m[i][0]
+# print(sum)
