@@ -16,8 +16,7 @@ while(True):
 
         length, info, frame = detector.findDistance(lmlist1[4][:-1], lmlist1[8][:-1], frame)
         print(f"length:===> {str(length)}")
-        
-        
+         
     cv.imshow('webcam', frame)
     # keyexit = cv.waitKey(5) & 0xFF
     # if keyexit == 27:
