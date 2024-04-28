@@ -75,6 +75,7 @@ cam.set(3,wCam)
 cam.set(4,hCam)
 
 # Mediapipe Hand Landmark Model
+
 with mp_hands.Hands(
     model_complexity=0,
     min_detection_confidence=0.5,
